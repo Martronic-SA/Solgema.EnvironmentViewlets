@@ -1,8 +1,0 @@
-Changelog for Solgema.EnvironmentViewlets
------------------------------------------
-
-v 0.6
------
-
-- initial release on github
-- remove revirew_state filter for searching content as user might have its own workflow definition.
