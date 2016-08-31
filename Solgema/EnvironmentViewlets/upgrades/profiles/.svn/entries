@@ -1,0 +1,46 @@
+9
+
+dir
+237612
+https://svn.plone.org/svn/collective/Solgema.fullcalendar/trunk/Solgema/fullcalendar/upgrades/profiles
+https://svn.plone.org/svn/collective
+
+
+
+2011-03-31T13:31:59.565221Z
+236759
+thomasdesvenain
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+db7f04ef-aaf3-0310-a811-c281ed44c4ad
+
+upgrade17
+dir
+
+upgrade18
+dir
+
+upgrade19
+dir
+
+upgrade12
+dir
+
+upgrade13
+dir
+
+upgrade16
+dir
+

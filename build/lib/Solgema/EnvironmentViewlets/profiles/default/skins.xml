@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<!-- This file holds the setup configuration for the portal_skins tool -->
+
+<object name="portal_skins">
+ <object name="solgemaenvironmentviewlets"
+    meta_type="Filesystem Directory View"
+    directory="Solgema.EnvironmentViewlets:skins/solgemaenvironmentviewlets"/>
+  <skin-path name="*">
+    <layer name="solgemaenvironmentviewlets" insert-after="custom"/>
+  </skin-path>
+</object>

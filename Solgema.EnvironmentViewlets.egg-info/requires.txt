@@ -1,0 +1,5 @@
+setuptools
+plone.app.z3cform
+plone.z3cform
+z3c.form
+plone.formwidget.contenttree

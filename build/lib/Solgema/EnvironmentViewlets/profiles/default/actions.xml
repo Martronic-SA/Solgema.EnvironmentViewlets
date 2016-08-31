@@ -1,0 +1,266 @@
+<object name="portal_actions" meta_type="Plone Actions Tool"
+   xmlns:i18n="http://xml.zope.org/namespaces/i18n">
+
+ <object name="solgemaenvironment_actions" meta_type="CMF Action Category">
+  <property name="title"></property>
+
+  <object name="use_as_banner" meta_type="CMF Action" i18n:domain="Solgema.EnvironmentViewlets">
+   <property name="title" i18n:translate="">Use as Banner</property>
+   <property name="description" i18n:translate=""></property>
+   <property
+      name="url_expr">string:$object_url/@@activate-bandeau</property>
+   <property name="icon_expr">string:$portal_url/environment_bandeau_icon.png</property>
+   <property
+      name="available_expr">python:path('object/@@solgemaenvironmentviewlets_control').allowActivateBandeau()</property>
+   <property name="permissions">
+    <element value="Modify portal content"/>
+   </property>
+   <property name="visible">True</property>
+  </object>
+
+  <object name="not_use_as_banner" meta_type="CMF Action" i18n:domain="Solgema.EnvironmentViewlets">
+   <property name="title" i18n:translate="">Do not use as Banner</property>
+   <property name="description" i18n:translate=""></property>
+   <property
+      name="url_expr">string:$object_url/@@deactivate-bandeau</property>
+   <property name="icon_expr">string:$portal_url/environment_bandeau_no_icon.png</property>
+   <property
+      name="available_expr">python:path('object/@@solgemaenvironmentviewlets_control').allowDeactivateBandeau()</property>
+   <property name="permissions">
+    <element value="Modify portal content"/>
+   </property>
+   <property name="visible">True</property>
+  </object>
+
+  <object name="use_as_footer" meta_type="CMF Action" i18n:domain="Solgema.EnvironmentViewlets">
+   <property name="title" i18n:translate="">Use as Footer</property>
+   <property name="description" i18n:translate=""></property>
+   <property
+      name="url_expr">string:$object_url/@@activate-footer</property>
+   <property name="icon_expr">string:$portal_url/environment_footer_icon.png</property>
+   <property
+      name="available_expr">python:path('object/@@solgemaenvironmentviewlets_control').allowActivateFooter()</property>
+   <property name="permissions">
+    <element value="Modify portal content"/>
+   </property>
+   <property name="visible">True</property>
+  </object>
+
+  <object name="not_use_as_footer" meta_type="CMF Action" i18n:domain="Solgema.EnvironmentViewlets">
+   <property name="title" i18n:translate="">Do not use as Footer</property>
+   <property name="description" i18n:translate=""></property>
+   <property
+      name="url_expr">string:$object_url/@@deactivate-footer</property>
+   <property name="icon_expr">string:$portal_url/environment_footer_no_icon.png</property>
+   <property
+      name="available_expr">python:path('object/@@solgemaenvironmentviewlets_control').allowDeactivateFooter()</property>
+   <property name="permissions">
+    <element value="Modify portal content"/>
+   </property>
+   <property name="visible">True</property>
+  </object>
+
+  <object name="use_as_printfooter" meta_type="CMF Action" i18n:domain="Solgema.EnvironmentViewlets">
+   <property name="title" i18n:translate="">Use as Print Footer</property>
+   <property name="description" i18n:translate=""></property>
+   <property
+      name="url_expr">string:$object_url/@@activate-printfooter</property>
+   <property name="icon_expr">string:$portal_url/environment_printfooter_icon.png</property>
+   <property
+      name="available_expr">python:path('object/@@solgemaenvironmentviewlets_control').allowActivatePrintFooter()</property>
+   <property name="permissions">
+    <element value="Modify portal content"/>
+   </property>
+   <property name="visible">True</property>
+  </object>
+
+  <object name="not_use_as_printfooter" meta_type="CMF Action" i18n:domain="Solgema.EnvironmentViewlets">
+   <property name="title" i18n:translate="">Do not use as Print Footer</property>
+   <property name="description" i18n:translate=""></property>
+   <property
+      name="url_expr">string:$object_url/@@deactivate-printfooter</property>
+   <property name="icon_expr">string:$portal_url/environment_printfooter_no_icon.png</property>
+   <property
+      name="available_expr">python:path('object/@@solgemaenvironmentviewlets_control').allowDeactivatePrintFooter()</property>
+   <property name="permissions">
+    <element value="Modify portal content"/>
+   </property>
+   <property name="visible">True</property>
+  </object>
+
+  <object name="use_as_logo" meta_type="CMF Action" i18n:domain="Solgema.EnvironmentViewlets">
+   <property name="title" i18n:translate="">Use as Logo</property>
+   <property name="description" i18n:translate=""></property>
+   <property
+      name="url_expr">string:$object_url/@@activate-logo</property>
+   <property name="icon_expr">string:$portal_url/environment_logo_icon.png</property>
+   <property
+      name="available_expr">python:path('object/@@solgemaenvironmentviewlets_control').allowActivateLogo()</property>
+   <property name="permissions">
+    <element value="Modify portal content"/>
+   </property>
+   <property name="visible">True</property>
+  </object>
+
+  <object name="not_use_as_logo" meta_type="CMF Action" i18n:domain="Solgema.EnvironmentViewlets">
+   <property name="title" i18n:translate="">Do not use as Logo</property>
+   <property name="description" i18n:translate=""></property>
+   <property
+      name="url_expr">string:$object_url/@@deactivate-logo</property>
+   <property name="icon_expr">string:$portal_url/environment_logo_no_icon.png</property>
+   <property
+      name="available_expr">python:path('object/@@solgemaenvironmentviewlets_control').allowDeactivateLogo()</property>
+   <property name="permissions">
+    <element value="Modify portal content"/>
+   </property>
+   <property name="visible">True</property>
+  </object>
+
+  <object name="use_as_printlogo" meta_type="CMF Action" i18n:domain="Solgema.EnvironmentViewlets">
+   <property name="title" i18n:translate="">Use as Print Logo</property>
+   <property name="description" i18n:translate=""></property>
+   <property
+      name="url_expr">string:$object_url/@@activate-printlogo</property>
+   <property name="icon_expr">string:$portal_url/environment_printlogo_icon.png</property>
+   <property
+      name="available_expr">python:path('object/@@solgemaenvironmentviewlets_control').allowActivatePrintLogo()</property>
+   <property name="permissions">
+    <element value="Modify portal content"/>
+   </property>
+   <property name="visible">True</property>
+  </object>
+
+  <object name="not_use_as_printlogo" meta_type="CMF Action" i18n:domain="Solgema.EnvironmentViewlets">
+   <property name="title" i18n:translate="">Do not use as Print Logo</property>
+   <property name="description" i18n:translate=""></property>
+   <property
+      name="url_expr">string:$object_url/@@deactivate-printlogo</property>
+   <property name="icon_expr">string:$portal_url/environment_printlogo_no_icon.png</property>
+   <property
+      name="available_expr">python:path('object/@@solgemaenvironmentviewlets_control').allowDeactivatePrintLogo()</property>
+   <property name="permissions">
+    <element value="Modify portal content"/>
+   </property>
+   <property name="visible">True</property>
+  </object>
+
+  <object name="use_as_background" meta_type="CMF Action" i18n:domain="Solgema.EnvironmentViewlets">
+   <property name="title" i18n:translate="">Use as Background</property>
+   <property name="description" i18n:translate=""></property>
+   <property
+      name="url_expr">string:$object_url/@@activate-background</property>
+   <property name="icon_expr">string:environment_background_icon.png</property>
+   <property
+      name="available_expr">python:path('object/@@solgemaenvironmentviewlets_control').allowActivateBackground()</property>
+   <property name="permissions">
+    <element value="Modify portal content"/>
+   </property>
+   <property name="visible">True</property>
+  </object>
+
+  <object name="not_use_as_background" meta_type="CMF Action" i18n:domain="Solgema.EnvironmentViewlets">
+   <property name="title" i18n:translate="">Do not use as Background</property>
+   <property name="description" i18n:translate=""></property>
+   <property
+      name="url_expr">string:$object_url/@@deactivate-background</property>
+   <property name="icon_expr">string:$portal_url/environment_background_no_icon.png</property>
+   <property
+      name="available_expr">python:path('object/@@solgemaenvironmentviewlets_control').allowDeactivateBackground()</property>
+   <property name="permissions">
+    <element value="Modify portal content"/>
+   </property>
+   <property name="visible">True</property>
+  </object>
+
+ </object>
+
+ <object name="object" meta_type="CMF Action Category">
+  <property name="title"></property>
+
+  <object name="edit_banner" meta_type="CMF Action" i18n:domain="Solgema.EnvironmentViewlets">
+   <property name="title" i18n:translate="">Banner</property>
+   <property name="description" i18n:translate=""></property>
+   <property
+      name="url_expr">string:${object_url}/@@edit-bandeau</property>
+   <property name="icon_expr"></property>
+   <property
+      name="available_expr">python:path('object/@@solgemaenvironmentviewlets_control').isBandeau()</property>
+   <property name="permissions">
+    <element value="Modify portal content"/>
+   </property>
+   <property name="visible">True</property>
+  </object>
+
+  <object name="edit_footer" meta_type="CMF Action" i18n:domain="Solgema.EnvironmentViewlets">
+   <property name="title" i18n:translate="">Footer</property>
+   <property name="description" i18n:translate=""></property>
+   <property
+      name="url_expr">string:${object_url}/@@edit-footer</property>
+   <property name="icon_expr"></property>
+   <property
+      name="available_expr">python:path('object/@@solgemaenvironmentviewlets_control').isFooter()</property>
+   <property name="permissions">
+    <element value="Modify portal content"/>
+   </property>
+   <property name="visible">True</property>
+  </object>
+
+  <object name="edit_printfooter" meta_type="CMF Action" i18n:domain="Solgema.EnvironmentViewlets">
+   <property name="title" i18n:translate="">Print Footer</property>
+   <property name="description" i18n:translate=""></property>
+   <property
+      name="url_expr">string:${object_url}/@@edit-printfooter</property>
+   <property name="icon_expr"></property>
+   <property
+      name="available_expr">python:path('object/@@solgemaenvironmentviewlets_control').isPrintFooter()</property>
+   <property name="permissions">
+    <element value="Modify portal content"/>
+   </property>
+   <property name="visible">True</property>
+  </object>
+
+  <object name="edit_logo" meta_type="CMF Action" i18n:domain="Solgema.EnvironmentViewlets">
+   <property name="title" i18n:translate="">Logo</property>
+   <property name="description" i18n:translate=""></property>
+   <property
+      name="url_expr">string:${object_url}/@@edit-logo</property>
+   <property name="icon_expr"></property>
+   <property
+      name="available_expr">python:path('object/@@solgemaenvironmentviewlets_control').isLogo()</property>
+   <property name="permissions">
+    <element value="Modify portal content"/>
+   </property>
+   <property name="visible">True</property>
+  </object>
+
+  <object name="edit_printlogo" meta_type="CMF Action" i18n:domain="Solgema.EnvironmentViewlets">
+   <property name="title" i18n:translate="">Print Logo</property>
+   <property name="description" i18n:translate=""></property>
+   <property
+      name="url_expr">string:${object_url}/@@edit-printlogo</property>
+   <property name="icon_expr"></property>
+   <property
+      name="available_expr">python:path('object/@@solgemaenvironmentviewlets_control').isPrintLogo()</property>
+   <property name="permissions">
+    <element value="Modify portal content"/>
+   </property>
+   <property name="visible">True</property>
+  </object>
+
+  <object name="edit_printlogo" meta_type="CMF Action" i18n:domain="Solgema.EnvironmentViewlets">
+   <property name="title" i18n:translate="">Background</property>
+   <property name="description" i18n:translate=""></property>
+   <property
+      name="url_expr">string:${object_url}/@@edit-background</property>
+   <property name="icon_expr"></property>
+   <property
+      name="available_expr">python:path('object/@@solgemaenvironmentviewlets_control').isBackground()</property>
+   <property name="permissions">
+    <element value="Modify portal content"/>
+   </property>
+   <property name="visible">True</property>
+  </object>
+
+ </object>
+
+</object>

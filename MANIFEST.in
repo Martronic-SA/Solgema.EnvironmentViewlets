@@ -1,0 +1,6 @@
+include *.txt
+include *.rst
+recursive-include Solgema *
+global-exclude *.pyc
+global-exclude *.pyo
+global-exclude *.~

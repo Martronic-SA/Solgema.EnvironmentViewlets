@@ -1,0 +1,7 @@
+<span metal:define-macro="portal_logo"
+   id="portal-printlogo"
+   i18n:domain="plone"
+   tal:define="printLogo view/printLogo"
+   tal:condition="printLogo">
+    <img src="logo.jpg" alt=""
+         tal:replace="structure printLogo/content" /></span>

@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<registry>
+  
+  <records prefix="plone.resources/solgema-environmentviewlets"
+           interface='Products.CMFPlone.interfaces.IResourceRegistry'>
+    <value key="js">++resource++solgemaenvironmentviewlets/carousel.js</value>
+    <value key="css">
+      <element>++resource++solgemaenvironmentviewlets/solgema_environmentviewlets.css</element>
+      <element>++resource++solgemaenvironmentviewlets/solgema_environmentviewlets_print.css</element>
+    </value>
+  </records>
+  
+  <records prefix="plone.bundles/plone-legacy"
+            interface='Products.CMFPlone.interfaces.IBundleRegistry'>
+    <value key="resources" purge="false">
+      <element>solgema-environmentviewlets</element>
+    </value>
+    <value key="enabled">True</value>
+    <value key="last_compilation"></value>
+  </records>
+  
+</registry>

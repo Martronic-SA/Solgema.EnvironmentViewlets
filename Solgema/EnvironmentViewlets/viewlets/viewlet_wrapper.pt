@@ -1,0 +1,38 @@
+<tal:doctype tal:replace="structure string:&lt;!DOCTYPE html&gt;" />
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+    tal:define="portal_state context/@@plone_portal_state;
+        context_state context/@@plone_context_state;
+        plone_view context/@@plone;
+        lang portal_state/language;
+        view nocall:view | nocall: plone_view;
+        dummy python: plone_view.mark_view(view);
+        portal_url portal_state/portal_url;
+        checkPermission nocall: context/portal_membership/checkPermission;
+        site_properties context/portal_properties/site_properties;
+        ajax_content_load request/ajax_content_load | nothing;
+        ajax_load request/ajax_load | request/ajax_content_load | nothing;
+        ajax_include_head request/ajax_include_head | nothing;
+        dummy python:request.RESPONSE.setHeader('X-UA-Compatible', 'IE=edge,chrome=1');"
+    tal:attributes="lang lang;"
+    tal:omit-tag="ajax_content_load">
+
+
+<head tal:condition="not:ajax_content_load">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+    <base tal:attributes="href plone_view/renderBase" /><!--[if lt IE 7]></base><![endif]-->
+
+    <tal:notajax tal:condition="python:not ajax_load or ajax_include_head">
+        <div tal:replace="structure provider:plone.htmlhead" />
+        <link tal:replace="structure provider:plone.htmlhead.links" />
+
+        <meta name="viewport" content="width=device-width, initial-scale=0.6666, maximum-scale=1.0, minimum-scale=0.6666" />
+        <meta name="generator" content="Solgema Solution - http://www.solgema.com - based on Zope & Plone" />
+    </tal:notajax>
+</head>
+
+<body>
+<div tal:replace="structure view/viewlet"/>
+</body>
+</html>

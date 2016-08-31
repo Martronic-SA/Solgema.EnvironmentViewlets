@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<object name="portal_catalog">
+
+ <index name="localEnvironment" meta_type="BooleanIndex">
+  <indexed_attr value="localEnvironment"/>
+ </index>
+ <column value="localEnvironment"/>
+
+ <index name="stopAcquisitionEnvironment" meta_type="BooleanIndex">
+  <indexed_attr value="stopAcquisitionEnvironment"/>
+ </index>
+ <column value="stopAcquisitionEnvironment"/>
+
+ <index name="bannerImageLink" meta_type="FieldIndex">
+  <indexed_attr value="bannerImageLink"/>
+ </index>
+ <column value="bannerImageLink"/>
+
+ <column value="backgroundRepeat"/>
+
+ <column value="backgroundExtend"/>
+
+ <column value="backgroundFixed"/>
+
+ <column value="backgroundAlign"/>
+
+</object>

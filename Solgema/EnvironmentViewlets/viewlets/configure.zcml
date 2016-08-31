@@ -1,0 +1,125 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:browser="http://namespaces.zope.org/browser">
+
+    <!-- The bandeau Manager-->
+    <browser:viewletManager
+        name="solgema.bandeauManager"
+        provides="Solgema.EnvironmentViewlets.interfaces.ISolgemaBandeauManager"
+        permission="zope2.View"
+        class="plone.app.viewletmanager.manager.OrderedViewletManager"
+        layer="Solgema.EnvironmentViewlets.interfaces.ISolgemaEnvironmentViewletsLayer"
+        />
+
+    <browser:viewlet
+        name="solgema.bandeauManagerViewlet"
+        class=".common.BandeauManagerViewlet"
+        manager="plone.app.layout.viewlets.interfaces.IPortalHeader"
+        permission="zope2.View"
+        layer="Solgema.EnvironmentViewlets.interfaces.ISolgemaEnvironmentViewletsLayer"
+        />
+
+    <!-- The bandeau -->
+    <browser:viewlet
+        name="solgema.bandeau"
+        class=".common.BandeauViewlet"
+        manager="Solgema.EnvironmentViewlets.interfaces.ISolgemaBandeauManager"
+        permission="zope2.View"
+        layer="Solgema.EnvironmentViewlets.interfaces.ISolgemaEnvironmentViewletsLayer"
+        />
+
+    <!-- The footer Manager -->
+    <browser:viewletManager
+        name="solgema.footerManager"
+        provides="Solgema.EnvironmentViewlets.interfaces.ISolgemaFooterManager"
+        permission="zope2.View"
+        class="plone.app.viewletmanager.manager.OrderedViewletManager"
+        layer="Solgema.EnvironmentViewlets.interfaces.ISolgemaEnvironmentViewletsLayer"
+        />
+
+    <browser:viewlet
+        name="solgema.footerManagerViewlet"
+        class=".common.FooterManagerViewlet"
+        manager="plone.app.layout.viewlets.interfaces.IPortalFooter"
+        permission="zope2.View"
+        layer="Solgema.EnvironmentViewlets.interfaces.ISolgemaEnvironmentViewletsLayer"
+        />
+
+    <!-- The footer -->
+    <browser:viewlet
+        name="solgema.footer"
+        class=".common.FooterViewlet"
+        manager="Solgema.EnvironmentViewlets.interfaces.ISolgemaFooterManager"
+        permission="zope.Public"
+        layer="Solgema.EnvironmentViewlets.interfaces.ISolgemaEnvironmentViewletsLayer"
+        />
+
+    <!-- The print footer Manager -->
+    <browser:viewletManager
+        name="solgema.printfooterManager"
+        provides="Solgema.EnvironmentViewlets.interfaces.ISolgemaPrintFooterManager"
+        permission="zope2.View"
+        class="plone.app.viewletmanager.manager.OrderedViewletManager"
+        layer="Solgema.EnvironmentViewlets.interfaces.ISolgemaEnvironmentViewletsLayer"
+        />
+
+    <browser:viewlet
+        name="solgema.printfooterManagerViewlet"
+        class=".common.PrintFooterManagerViewlet"
+        manager="plone.app.layout.viewlets.interfaces.IPortalFooter"
+        permission="zope2.View"
+        layer="Solgema.EnvironmentViewlets.interfaces.ISolgemaEnvironmentViewletsLayer"
+        />
+
+    <!-- The print footer -->
+    <browser:viewlet
+        name="solgema.printfooter"
+        class=".common.PrintFooterViewlet"
+        manager="Solgema.EnvironmentViewlets.interfaces.ISolgemaPrintFooterManager"
+        permission="zope.Public"
+        layer="Solgema.EnvironmentViewlets.interfaces.ISolgemaEnvironmentViewletsLayer"
+        />
+
+    <browser:page
+        for="*"
+        name="printfooter"
+        class=".common.PrintFooterPage"
+        permission="zope.Public"
+        template="viewlet_wrapper.pt"
+        />
+
+    <!-- The logo -->
+    <browser:viewlet
+        name="solgema.logo"
+        manager="plone.app.layout.viewlets.interfaces.IPortalHeader"
+        class=".common.LogoViewlet"
+        permission="zope2.View"
+        layer="Solgema.EnvironmentViewlets.interfaces.ISolgemaEnvironmentViewletsLayer"
+        />
+
+    <!-- The print logo -->
+    <browser:viewlet
+        name="solgema.printlogo"
+        manager="plone.app.layout.viewlets.interfaces.IAboveContent"
+        class=".common.PrintLogoViewlet"
+        permission="zope2.View"
+        layer="Solgema.EnvironmentViewlets.interfaces.ISolgemaEnvironmentViewletsLayer"
+        />
+
+    <browser:page
+        for="*"
+        name="printlogo"
+        class=".common.PrintLogoPage"
+        permission="zope.Public"
+        template="viewlet_wrapper.pt"
+        />
+
+    <!-- The background -->
+    <browser:viewlet
+        name="solgema.background"
+        manager="plone.app.layout.viewlets.interfaces.IPortalTop"
+        class=".common.BackgroundViewlet"
+        permission="zope2.View"
+        layer="Solgema.EnvironmentViewlets.interfaces.ISolgemaEnvironmentViewletsLayer"
+        />
+</configure>

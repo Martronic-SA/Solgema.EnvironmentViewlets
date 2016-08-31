@@ -1,0 +1,57 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
+    i18n_domain="Solgema.EnvironmentViewlets">
+
+  <genericsetup:registerProfile
+      name="update02"
+      title="Solgema EnvironmentViewlets update 0.2"
+      directory="profiles/update-0.2"
+      description="Update Solgema.EnvironmentViewlets Package to 0.2 by. Optimisation"
+      provides="Products.GenericSetup.interfaces.EXTENSION"
+      for="Products.CMFPlone.interfaces.IMigratingPloneSiteRoot"
+    />
+
+  <genericsetup:upgradeStep
+      title="Update Solgema EnvironmentViewlets"
+      description="Update Solgema.EnvironmentViewlets Package to 0.2 by. Optimisation"
+      source="0.1.0"
+      destination="0.2"
+      handler=".migrations.update02"
+      profile="Solgema.EnvironmentViewlets:default" />
+
+  <genericsetup:registerProfile
+      name="update03"
+      title="Solgema EnvironmentViewlets update 0.3"
+      directory="profiles/update-0.3"
+      description="Update Solgema.EnvironmentViewlets Package to 0.3 by. Optimisation"
+      provides="Products.GenericSetup.interfaces.EXTENSION"
+      for="Products.CMFPlone.interfaces.IMigratingPloneSiteRoot"
+    />
+
+  <genericsetup:upgradeStep
+      title="Update Solgema EnvironmentViewlets"
+      description="Update Solgema.EnvironmentViewlets Package to 0.3 by. Optimisation"
+      source="0.2"
+      destination="0.3"
+      handler=".migrations.update03"
+      profile="Solgema.EnvironmentViewlets:default" />
+
+  <genericsetup:registerProfile
+      name="update04"
+      title="Solgema EnvironmentViewlets update 0.4"
+      directory="profiles/update-0.4"
+      description="Update Solgema.EnvironmentViewlets Package to 0.4 by. Background"
+      provides="Products.GenericSetup.interfaces.EXTENSION"
+      for="Products.CMFPlone.interfaces.IMigratingPloneSiteRoot"
+    />
+
+  <genericsetup:upgradeStep
+      title="Update Solgema EnvironmentViewlets"
+      description="Update Solgema.EnvironmentViewlets Package to 0.4 by. Optimisation"
+      source="0.3"
+      destination="0.4"
+      handler=".migrations.update04"
+      profile="Solgema.EnvironmentViewlets:default" />
+    
+</configure>

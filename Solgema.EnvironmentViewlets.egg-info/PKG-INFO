@@ -1,0 +1,38 @@
+Metadata-Version: 1.1
+Name: Solgema.EnvironmentViewlets
+Version: 0.5
+Summary: Solgema EnvironmentViewlets
+Home-page: http://www.martronic.ch/plone_products/Solgema.EnvironmentViewlets
+Author: Martronic SA
+Author-email: martronic@martronic.ch
+License: GPL
+Description: Solgema.EnvironmentViewlets Package Readme
+        =========================
+        
+        Overview
+        --------
+        
+        Solgema
+        
+        Changelog for Solgema.EnvironmentViewlets
+        
+        
+        Solgema.EnvironmentViewlets - 0.5
+        
+            - Fix default carousel height
+            - Plone 5 compatibility
+        
+        
+        Changelog for Solgema.EnvironmentViewlets
+        -----------------------------------------
+        
+        v 0.5
+        -----
+        
+        - initial release on github
+        
+Keywords: Solgema
+Platform: UNKNOWN
+Classifier: Framework :: Plone
+Classifier: Programming Language :: Python
+Classifier: Topic :: Software Development :: Libraries :: Python Modules

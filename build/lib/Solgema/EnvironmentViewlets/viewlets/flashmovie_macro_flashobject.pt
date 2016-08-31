@@ -1,0 +1,15 @@
+  <object type="application/x-shockwave-flash"
+	data=""
+        width="320"
+        height="200"
+	bgcolor="transparent"
+	tal:define="view context/@@flash_view;
+	            width view/getDisplayWidth;
+		    height view/getDisplayHeight;"
+        tal:attributes="width width|default; height height|default; bgcolor context/getBgcolor|default;
+			data string:${context/absolute_url}/index_html">
+      <param name="movie" value="" bgcolor="transparent" 
+             tal:attributes="value string:${context/absolute_url}/index_html;" />
+      <param name="bgcolor" value="transparent" tal:attributes="value context/getBgcolor|default;" />
+      <param name="wmode" value="transparent" />
+  </object>

@@ -1,0 +1,12 @@
+<configure xmlns="http://namespaces.zope.org/zope"
+	   xmlns:five="http://namespaces.zope.org/five">
+
+    <adapter factory='.catalog.get_localEnvironment' name='localEnvironment' />
+    <adapter factory='.catalog.get_stopAcquisitionEnvironment' name='stopAcquisitionEnvironment' />
+    <adapter factory='.catalog.get_bannerImageLink' name='bannerImageLink' />
+    <adapter factory='.catalog.get_backgroundRepeat' name='backgroundRepeat' />
+    <adapter factory='.catalog.get_backgroundExtend' name='backgroundExtend' />
+    <adapter factory='.catalog.get_backgroundFixed' name='backgroundFixed' />
+    <adapter factory='.catalog.get_backgroundAlign' name='backgroundAlign' />
+
+</configure>

@@ -1,0 +1,19 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:browser="http://namespaces.zope.org/browser"
+    xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
+    xmlns:five="http://namespaces.zope.org/five"
+    xmlns:zcml="http://namespaces.zope.org/zcml"
+    xmlns:i18n="http://namespaces.zope.org/i18n"
+    xmlns:plone="http://namespaces.plone.org/plone"
+    i18n_domain="Solgema.EnvironmentViewlets">
+
+  <include package="plone.app.contenttypes"/>
+  <adapter name="bandeau_migrator" factory=".migration.BandeauMigator"/>
+  <adapter name="footer_migrator" factory=".migration.FooterMigator"/>
+  <adapter name="printfooter_migrator" factory=".migration.PrintFooterMigator"/>
+  <adapter name="logo_migrator" factory=".migration.LogoMigator"/>
+  <adapter name="printlogo_migrator" factory=".migration.PrintLogoMigator"/>
+  <adapter name="background_migrator" factory=".migration.BackgroundMigator"/>
+
+</configure>

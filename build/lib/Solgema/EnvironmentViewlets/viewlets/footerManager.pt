@@ -1,0 +1,3 @@
+<div id="portal-footer" class="visualNoPrint">
+  <tal:footer tal:replace="structure provider:solgema.footerManager" />
+</div>

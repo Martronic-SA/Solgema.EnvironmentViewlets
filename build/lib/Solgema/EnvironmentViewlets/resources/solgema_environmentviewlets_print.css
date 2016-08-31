@@ -1,0 +1,15 @@
+@media print {
+    #solgemaprintfooter,
+    #portal-printlogo {
+        display:block;
+    }
+
+    .sendaspdf #solgemaprintfooter,
+    .sendaspdf #portal-printlogo {
+        display:none;
+    }
+
+    #solgema-portal-printfooter {
+        font-size:8pt;
+    }
+}

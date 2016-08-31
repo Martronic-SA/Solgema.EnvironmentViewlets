@@ -1,0 +1,97 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:browser="http://namespaces.zope.org/browser"
+    xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
+    xmlns:five="http://namespaces.zope.org/five"
+    xmlns:i18n="http://namespaces.zope.org/i18n"
+    xmlns:zcml="http://namespaces.zope.org/zcml"
+    i18n_domain="Solgema.EnvironmentViewlets">
+
+  <include package="plone.app.z3cform" />
+  <include package="plone.z3cform" />
+  <include package="z3c.form" />
+
+  <five:registerPackage package="." initialize=".initialize" />
+
+  <include file="profiles.zcml"/>
+  <include file="catalog.zcml"/>
+  <include package=".browser" />
+  <include package=".viewlets" />
+  <include package=".upgrades" />
+
+  <i18n:registerTranslations directory="locales" />
+  
+  <include zcml:condition="have plone-5" package=".dx"/>
+
+  <browser:resourceDirectory
+      name="solgemaenvironmentviewlets"
+      directory="resources"
+      />
+        
+  <browser:menu
+    id="solgema_environment_actions"
+    title="The 'environment' menu - allows the user to use objects as environment viewlets (banner, footer, logo...)"
+    class=".menu.SolgemaEnvironmentActionsMenu"
+    />
+
+  <adapter for="* *"
+           name="solgema.environment.actions"
+           factory=".menu.SolgemaEnvironmentActionsSubMenuItem"
+           provides="plone.app.contentmenu.interfaces.IContentMenuItem" />
+
+<!-- Content to Bandeau Adapters -->
+  <adapter
+     for="Solgema.EnvironmentViewlets.interfaces.IBandeauMarker"
+     provides="Solgema.EnvironmentViewlets.interfaces.IBandeauContent"
+     factory=".content.BandeauContentAdapter"
+     />
+
+<!-- Content to Footer Adapters -->
+  <adapter
+     for="Solgema.EnvironmentViewlets.interfaces.IFooterMarker"
+     provides="Solgema.EnvironmentViewlets.interfaces.IFooterContent"
+     factory=".content.FooterContentAdapter"
+     />
+
+<!-- Content to Print Footer Adapters -->
+  <adapter
+     for="Solgema.EnvironmentViewlets.interfaces.IPrintFooterMarker"
+     provides="Solgema.EnvironmentViewlets.interfaces.IPrintFooterContent"
+     factory=".content.PrintFooterContentAdapter"
+     />
+
+<!-- Content to Print Logo Adapters -->
+  <adapter
+     for="Solgema.EnvironmentViewlets.interfaces.ILogoMarker"
+     provides="Solgema.EnvironmentViewlets.interfaces.ILogoContent"
+     factory=".content.LogoContentAdapter"
+     />
+
+<!-- Content to Print Logo Adapters -->
+  <adapter
+     for="Solgema.EnvironmentViewlets.interfaces.IPrintLogoMarker"
+     provides="Solgema.EnvironmentViewlets.interfaces.IPrintLogoContent"
+     factory=".content.PrintLogoContentAdapter"
+     />
+
+<!-- Content to Background Adapters -->
+  <adapter
+     for="Solgema.EnvironmentViewlets.interfaces.IBackgroundMarker"
+     provides="Solgema.EnvironmentViewlets.interfaces.IBackgroundContent"
+     factory=".content.BackgroundContentAdapter"
+     />
+
+<!-- Events on bandeau -->
+  <subscriber
+    for="*
+         Solgema.EnvironmentViewlets.interfaces.IEnvironmentCreationEvent"
+    handler=".event.environment_created"
+    />
+
+  <subscriber
+    for="*
+         Solgema.EnvironmentViewlets.interfaces.IEnvironmentModificationEvent"
+    handler=".event.environment_created"
+    />
+
+</configure>

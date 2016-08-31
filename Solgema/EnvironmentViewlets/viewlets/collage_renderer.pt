@@ -1,0 +1,5 @@
+<div id="collage">  
+      <div tal:replace="structure here/@@renderer">
+          Collage content
+      </div>
+</div>

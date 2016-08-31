@@ -1,0 +1,4 @@
+<div id="folder_renderer"
+    tal:define="plone_view context/@@plone;"> 
+        <metal:block use-macro="context/folder_full_view_item/macros/content"></metal:block>
+</div>

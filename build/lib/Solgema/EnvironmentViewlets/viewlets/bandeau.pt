@@ -1,0 +1,22 @@
+<div id="solgemabandeau" class="visualNoPrint"
+   tal:define="bList view/bandeauxList;"
+   i18n:domain="plone" tal:condition="bList"
+   metal:define-macro="portal_bandeau">
+  <div id="portal-bandeau">
+    <div id="inner-portal-bandeau" class="bannersContainer">
+        <tal:bandeaux repeat="bandeauTag bList">
+          <div tal:define="cssDisplay python:repeat['bandeauTag'].start and 'display: block' or 'display: none';
+                           oneItemStyle python:len(bList)<2 and 'position:relative;; ' or repeat['bandeauTag'].start and 'position:relative;; ' or ''"
+               tal:attributes="id string:carousel-banner-${repeat/bandeauTag/index};
+                               class python:repeat['bandeauTag'].start and bandeauTag['id']+' carousel-banner selected' or bandeauTag['id']+' carousel-banner';
+                               style python:repeat['bandeauTag'].start and oneItemStyle+cssDisplay or oneItemStyle+cssDisplay">
+            <p tal:replace="structure bandeauTag/content"/>
+          </div>
+        </tal:bandeaux>
+        <span class="bandeauTopLeft"></span>
+        <span class="bandeauTopRight"></span>
+        <span class="bandeauBottomLeft"></span>
+        <span class="bandeauBottomRight"></span>
+    </div>
+  </div>
+</div>

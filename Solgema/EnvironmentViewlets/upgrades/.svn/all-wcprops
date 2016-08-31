@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/collective/!svn/ver/237232/Solgema.fullcalendar/trunk/Solgema/fullcalendar/upgrades
+END
+migrations.py
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/collective/!svn/ver/237232/Solgema.fullcalendar/trunk/Solgema/fullcalendar/upgrades/migrations.py
+END
+configure.zcml
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/collective/!svn/ver/236091/Solgema.fullcalendar/trunk/Solgema/fullcalendar/upgrades/configure.zcml
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/collective/!svn/ver/236091/Solgema.fullcalendar/trunk/Solgema/fullcalendar/upgrades/__init__.py
+END
+upgrades.zcml
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/collective/!svn/ver/236091/Solgema.fullcalendar/trunk/Solgema/fullcalendar/upgrades/upgrades.zcml
+END

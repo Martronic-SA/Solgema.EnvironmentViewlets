@@ -1,0 +1,4 @@
+<layers>
+    <layer name="Solgema.EnvironmentViewlets" 
+           interface="Solgema.EnvironmentViewlets.interfaces.ISolgemaEnvironmentViewletsLayer" />
+</layers>

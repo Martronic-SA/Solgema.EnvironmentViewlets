@@ -1,0 +1,45 @@
+<div id="solgemabackground" class="visualNoPrint"
+   tal:define="bList view/backgroundsList;"
+   i18n:domain="plone"
+   metal:define-macro="portal_bandeau"
+   tal:condition="bList">
+  <div id="portal-background">
+    <div id="inner-portal-background" class="bannersContainer">
+        <tal:bandeaux repeat="bandeauTag bList">
+          <div tal:attributes="id string:carousel-banner-${repeat/bandeauTag/index};
+                               class bandeauTag/cssClass;
+                               style bandeauTag/cssStyle">
+            <p tal:replace="structure bandeauTag/content"/>
+          </div>
+        </tal:bandeaux>
+    </div>
+  </div>
+</div>
+<script type="text/javascript">
+function initBackground() {
+    if ($('#solgemabackground').find('.backgroundExtend').length>0) {
+        var htmlWidth = $('html').outerWidth();
+        var htmlHeight = $('html').outerHeight();
+        $('#solgemabackground').addClass('backgroundExtend');
+        $('#solgemabackground').width(htmlWidth).height(htmlHeight);
+        $('#solgemabackground .carousel-banner').width(htmlWidth).height(htmlHeight);
+        $('#solgemabackground .backgroundExtend').height(htmlHeight);
+    }
+    $('#solgemabackground').detach().prependTo('body').show();
+}
+if ($('#solgemabackground #inner-portal-background').children().length == 1) {
+    var item = $('#solgemabackground #inner-portal-background #carousel-banner-0').children().first();
+    console.debug(item);
+    $('body').css('backgroundColor', item.css('backgroundColor'));
+    $('body').css('backgroundImage', item.css('backgroundImage'));
+    $('body').css('backgroundPosition', item.css('backgroundPosition'));
+    $('body').css('backgroundRepeat', item.css('backgroundRepeat'));
+    $('body').css('backgroundSize', item.css('backgroundSize'));
+    $('body').css('backgroundAttachment', item.css('backgroundAttachment'));
+    console.debug(item.css('backgroundColor'));
+} else if ($('#solgemabackground #inner-portal-background').children().length>1) {
+    initBackground();
+} else if ($('#solgemabackground #inner-portal-background a').length>0) {
+    initBackground();
+}
+</script>

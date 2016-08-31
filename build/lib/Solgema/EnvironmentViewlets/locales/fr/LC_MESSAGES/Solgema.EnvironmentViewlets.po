@@ -1,0 +1,234 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Solgema\n"
+"POT-Creation-Date: 2013-07-25 13:26+0000\n"
+"PO-Revision-Date: 2007-12-14 16:01+0100\n"
+"Last-Translator: Martronic SA <martronic@martronic.ch>\n"
+"Language-Team: EDF\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+"Language-Code: fr\n"
+"Language-Name: Français\n"
+"Preferred-Encodings: utf-8 latin1\n"
+"Domain: DOMAIN\n"
+"X-Is-Fallback-For: fr-be fr-ca fr-lu fr-mc fr-ch fr-fr\n"
+
+#: ../profiles/default/actions.xml
+#: ../upgrades/profiles/update-0.4/actions.xml
+msgid "Background"
+msgstr "Fond de page"
+
+#: ../profiles/default/actions.xml
+#: ../upgrades/profiles/update-0.4/actions.xml
+msgid "Banner"
+msgstr "Bandeau"
+
+#: ../profiles/default/actions.xml
+#: ../upgrades/profiles/update-0.4/actions.xml
+msgid "Do not use as Background"
+msgstr "Ne pas utiliser comme fond de page"
+
+#: ../profiles/default/actions.xml
+#: ../upgrades/profiles/update-0.4/actions.xml
+msgid "Do not use as Banner"
+msgstr "Ne pas utiliser comme bandeau"
+
+#: ../profiles/default/actions.xml
+#: ../upgrades/profiles/update-0.4/actions.xml
+msgid "Do not use as Footer"
+msgstr "Ne pas utiliser comme pied de page"
+
+#: ../profiles/default/actions.xml
+#: ../upgrades/profiles/update-0.4/actions.xml
+msgid "Do not use as Logo"
+msgstr "Ne pas utiliser comme logo"
+
+#: ../profiles/default/actions.xml
+#: ../upgrades/profiles/update-0.4/actions.xml
+msgid "Do not use as Print Footer"
+msgstr "Ne pas utiliser comme pied de page impression"
+
+#: ../profiles/default/actions.xml
+#: ../upgrades/profiles/update-0.4/actions.xml
+msgid "Do not use as Print Logo"
+msgstr "Ne pas utiliser comme logo impression"
+
+#: ../profiles/default/actions.xml
+#: ../upgrades/profiles/update-0.4/actions.xml
+msgid "Footer"
+msgstr "Pied de page"
+
+#: ../profiles/default/actions.xml
+#: ../upgrades/profiles/update-0.4/actions.xml
+msgid "Logo"
+msgstr "Logo"
+
+#: ../profiles/default/actions.xml
+#: ../upgrades/profiles/update-0.4/actions.xml
+msgid "Print Footer"
+msgstr "Pied de page impression"
+
+#: ../profiles/default/actions.xml
+#: ../upgrades/profiles/update-0.4/actions.xml
+msgid "Print Logo"
+msgstr "Logo impression"
+
+#: ../profiles/default/actions.xml
+#: ../upgrades/profiles/update-0.4/actions.xml
+msgid "Use as Background"
+msgstr "Utiliser comme fond de page"
+
+#: ../profiles/default/actions.xml
+#: ../upgrades/profiles/update-0.4/actions.xml
+msgid "Use as Banner"
+msgstr "Utiliser comme bandeau"
+
+#: ../profiles/default/actions.xml
+#: ../upgrades/profiles/update-0.4/actions.xml
+msgid "Use as Footer"
+msgstr "Utiliser comme pied de page"
+
+#: ../profiles/default/actions.xml
+#: ../upgrades/profiles/update-0.4/actions.xml
+msgid "Use as Logo"
+msgstr "Utiliser comme logo"
+
+#: ../profiles/default/actions.xml
+#: ../upgrades/profiles/update-0.4/actions.xml
+msgid "Use as Print Footer"
+msgstr "Utiliser comme pied de page impression"
+
+#: ../profiles/default/actions.xml
+#: ../upgrades/profiles/update-0.4/actions.xml
+msgid "Use as Print Logo"
+msgstr "Utiliser comme logo impression"
+
+#. Default: "Display the banner in the current folder only"
+#: ../interfaces.py:63
+msgid "help_bannerLocalOnly"
+msgstr "N'afficher le bandeau que dans le dossier courant."
+
+#. Default: "Stop banners research to this folder and don't display banners in upper folders"
+#: ../interfaces.py:70
+msgid "help_bannerStopAcquisition"
+msgstr "Stoppe la recherche des bandeaux à ce dossier et n'affiche pas les bandeaux des dossiers supérieurs."
+
+#. Default: "Display the footer in the current folder only"
+#: ../interfaces.py:91
+msgid "help_footerLocalOnly"
+msgstr "N'afficher le pied de page que dans le dossier courant."
+
+#. Default: "Stop footers research to this folder and don't display footers in upper folders"
+#: ../interfaces.py:98
+msgid "help_footerStopAcquisition"
+msgstr "Stoppe la recherche des pieds de page à ce dossier et n'affiche pas les pieds de page des dossiers supérieurs."
+
+#. Default: "Display the logo in the current folder only"
+#: ../interfaces.py:135
+msgid "help_logoLocalOnly"
+msgstr "N'afficher le logo que dans le dossier courant."
+
+#. Default: "Display the footer in the current folder only"
+#: ../interfaces.py:113
+msgid "help_printfooterLocalOnly"
+msgstr "N'imprimer le pied de page que dans le dossier courant."
+
+#. Default: "Stop footers research to this folder and don't display footers in upper folders"
+#: ../interfaces.py:120
+msgid "help_printfooterStopAcquisition"
+msgstr "Stoppe la recherche des pieds de page à ce dossier et n'imprime pas les pieds de page des dossiers supérieurs."
+
+#. Default: "Display the logo for pinting in the current folder only"
+#: ../interfaces.py:150
+msgid "help_printlogoLocalOnly"
+msgstr "N'imprimer le logo que dans le dossier courant."
+
+#. Default: "Background alignment"
+#: ../interfaces.py:204
+msgid "label_backgroundAlign"
+msgstr "Alignement de l'image de fond"
+
+#. Default: "Extend the background"
+#: ../interfaces.py:192
+msgid "label_backgroundExtend"
+msgstr "Étendre l'image de fond à la largeur du navigateur"
+
+#. Default: "Fix the background"
+#: ../interfaces.py:198
+msgid "label_backgroundFixed"
+msgstr "Fixer l'image de fond à l'écran"
+
+#. Default: "Repeat the background"
+#: ../interfaces.py:183
+msgid "label_backgroundRepeat"
+msgstr "Répéter l'image de fond"
+
+#. Default: "A link for the banner"
+#: ../interfaces.py:76
+msgid "label_bannerImageLink"
+msgstr "Un lien pour cette bannière"
+
+#. Default: "Local Banner"
+#: ../interfaces.py:62
+msgid "label_bannerLocalOnly"
+msgstr "Bandeau Local"
+
+#. Default: "Stop Acquisition"
+#: ../interfaces.py:69
+msgid "label_bannerStopAcquisition"
+msgstr "Stopper l'acquisition"
+
+#: ../browser/content.py:94
+msgid "label_cancel"
+msgstr "Annuler"
+
+#: ../browser/content.py:77
+msgid "label_enable"
+msgstr "Activer"
+
+#. Default: "Local Footer"
+#: ../interfaces.py:90
+msgid "label_footerLocalOnly"
+msgstr "Pied de page local"
+
+#. Default: "Stop Acquisition"
+#: ../interfaces.py:97
+msgid "label_footerStopAcquisition"
+msgstr "Stopper l'acquisition"
+
+#. Default: "Local Logo"
+#: ../interfaces.py:134
+msgid "label_logoLocalOnly"
+msgstr "Logo local"
+
+#. Default: "Local Footer"
+#: ../interfaces.py:112
+msgid "label_printfooterLocalOnly"
+msgstr "Pied de page impression local"
+
+#. Default: "Stop Acquisition"
+#: ../interfaces.py:119
+msgid "label_printfooterStopAcquisition"
+msgstr "Stopper l'acquisition"
+
+#. Default: "Local Print Logo"
+#: ../interfaces.py:149
+msgid "label_printlogoLocalOnly"
+msgstr "Logo impression local"
+
+#: ../browser/content.py:101
+msgid "label_save"
+msgstr "Enregistrer"
+
+#. Default: "Environment"
+#: ../menu.py:43
+msgid "label_solgemaenvironmentactions_menu"
+msgstr "Environnement"
+
+#. Default: "Solgema Environment Actions for the current content item"
+#: ../menu.py:44
+msgid "title_solgemaenvironmentactions_menu"
+msgstr "Utiliser ce contenu comme élément d'environnement Solgema (Bandeau, Pied de page, Logo, etc.)"
+

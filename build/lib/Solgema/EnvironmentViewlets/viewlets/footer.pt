@@ -1,0 +1,16 @@
+<div metal:define-macro="portal_bandeau"
+   id="solgema-portal-footer"
+   tal:define="bList view/footer;"
+   i18n:domain="plone" tal:condition="bList">
+    <div id="inner-solgema-portal-footer">
+        <tal:bandeaux repeat="bandeauTag bList">
+          <div tal:define="cssDisplay python:'';
+                           oneItemStyle python:len(bList)<2 and 'position:relative;; ' or repeat['bandeauTag'].start and 'position:relative;; ' or ''"
+               tal:attributes="id string:carousel-footer-${repeat/bandeauTag/index};
+                               class python:repeat['bandeauTag'].start and bandeauTag['id']+' carousel-footer selected' or bandeauTag['id']+' carousel-footer';
+                               style python:repeat['bandeauTag'].start and oneItemStyle+cssDisplay or oneItemStyle+cssDisplay">
+            <p tal:replace="structure bandeauTag/content"/>
+          </div>
+        </tal:bandeaux>
+    </div>
+</div>

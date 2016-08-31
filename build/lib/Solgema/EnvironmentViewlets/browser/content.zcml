@@ -1,0 +1,159 @@
+<configure xmlns="http://namespaces.zope.org/zope"
+           xmlns:browser="http://namespaces.zope.org/browser"
+           xmlns:five="http://namespaces.zope.org/five"
+           xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+           i18n_domain="plone">
+
+  <!-- This view contains action conditions that control the visibility
+       of the other activation views, based on portal settings -->
+  <browser:page
+     for="*"
+     name="solgemaenvironmentviewlets_control"
+     class=".content.SolgemaBandeauContentControl"
+     permission="zope2.View"
+     />
+
+  <!-- Activation Views, turning content into banner -->
+  <browser:page
+     for="*"
+     name="activate-bandeau"
+     class=".content.SolgemaBandeauCreation"
+     permission="cmf.ModifyPortalContent"
+     />
+
+  <!-- Edit Views -->
+  <browser:page
+     for="..interfaces.IBandeauMarker"
+     name="edit-bandeau"
+     class=".content.SolgemaBandeauEdit"
+     permission="cmf.ModifyPortalContent"
+     />
+
+  <!-- Deactivation Views, turning banner back into content -->
+  <browser:page
+     for="*"
+     name="deactivate-bandeau"
+     class=".content.SolgemaBandeauDestruction"
+     permission="cmf.ModifyPortalContent"
+     />
+
+  <!-- Activation Views, turning content into footer -->
+  <browser:page
+     for="*"
+     name="activate-footer"
+     class=".content.SolgemaFooterCreation"
+     permission="cmf.ModifyPortalContent"
+     />
+
+  <!-- Edit Views -->
+  <browser:page
+     for="..interfaces.IFooterMarker"
+     name="edit-footer"
+     class=".content.SolgemaFooterEdit"
+     permission="cmf.ModifyPortalContent"
+     />
+
+  <!-- Deactivation Views, footer paybles back into content -->
+  <browser:page
+     for="*"
+     name="deactivate-footer"
+     class=".content.SolgemaFooterDestruction"
+     permission="cmf.ModifyPortalContent"
+     />
+
+  <!-- Activation Views, turning content into print footer -->
+  <browser:page
+     for="*"
+     name="activate-printfooter"
+     class=".content.SolgemaPrintFooterCreation"
+     permission="cmf.ModifyPortalContent"
+     />
+
+  <!-- Edit Views -->
+  <browser:page
+     for="..interfaces.IPrintFooterMarker"
+     name="edit-printfooter"
+     class=".content.SolgemaPrintFooterEdit"
+     permission="cmf.ModifyPortalContent"
+     />
+
+  <!-- Deactivation Views, print footer paybles back into content -->
+  <browser:page
+     for="*"
+     name="deactivate-printfooter"
+     class=".content.SolgemaPrintFooterDestruction"
+     permission="cmf.ModifyPortalContent"
+     />
+
+  <!-- Activation Views, turning content into logo -->
+  <browser:page
+     for="*"
+     name="activate-logo"
+     class=".content.SolgemaLogoCreation"
+     permission="cmf.ModifyPortalContent"
+     />
+
+  <!-- Edit Views -->
+  <browser:page
+     for="..interfaces.ILogoMarker"
+     name="edit-logo"
+     class=".content.SolgemaLogoEdit"
+     permission="cmf.ModifyPortalContent"
+     />
+
+  <!-- Deactivation Views, logo paybles back into content -->
+  <browser:page
+     for="*"
+     name="deactivate-logo"
+     class=".content.SolgemaLogoDestruction"
+     permission="cmf.ModifyPortalContent"
+     />
+
+  <!-- Activation Views, turning content into print logo -->
+  <browser:page
+     for="*"
+     name="activate-printlogo"
+     class=".content.SolgemaPrintLogoCreation"
+     permission="cmf.ModifyPortalContent"
+     />
+
+  <!-- Edit Views -->
+  <browser:page
+     for="..interfaces.IPrintLogoMarker"
+     name="edit-printlogo"
+     class=".content.SolgemaPrintLogoEdit"
+     permission="cmf.ModifyPortalContent"
+     />
+
+  <!-- Deactivation Views, print logo paybles back into content -->
+  <browser:page
+     for="*"
+     name="deactivate-printlogo"
+     class=".content.SolgemaPrintLogoDestruction"
+     permission="cmf.ModifyPortalContent"
+     />
+
+  <!-- Activation Views, turning content into print logo -->
+  <browser:page
+     for="*"
+     name="activate-background"
+     class=".content.SolgemaBackgroundCreation"
+     permission="cmf.ModifyPortalContent"
+     />
+
+  <!-- Edit Views -->
+  <browser:page
+     for="..interfaces.IBackgroundMarker"
+     name="edit-background"
+     class=".content.SolgemaBackgroundEdit"
+     permission="cmf.ModifyPortalContent"
+     />
+
+  <!-- Deactivation Views, print logo paybles back into content -->
+  <browser:page
+     for="*"
+     name="deactivate-background"
+     class=".content.SolgemaBackgroundDestruction"
+     permission="cmf.ModifyPortalContent"
+     />
+</configure>

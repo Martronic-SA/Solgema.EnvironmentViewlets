@@ -1,0 +1,3 @@
+<div id="solgemaprintfooter">
+  <tal:footer tal:replace="structure provider:solgema.printfooterManager" />
+</div>
