@@ -248,7 +248,7 @@ class LogoViewlet(BandeauViewlet):
         context_state = getMultiAdapter((self.context, self.request), name=u'plone_context_state')
         folder = context_state.folder()
         folder_path = '/'.join(folder.getPhysicalPath())
-        itemsBrains = catalog.searchResults(object_provides=self.marker, review_state=['published','visible','',None], sort_on='getObjPositionInParent')
+        itemsBrains = catalog.searchResults(object_provides=self.marker, sort_on='getObjPositionInParent')
         items = [a for a in itemsBrains if '/'.join(a.getPath().split('/')[0:-1]) in folder_path]
         items_paths = [a.getPath() for a in items]
         items.sort(lambda x, y : cmp (len(x.getPath().split('/')), len(y.getPath().split('/'))))

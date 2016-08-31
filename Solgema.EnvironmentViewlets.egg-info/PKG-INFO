@@ -1,21 +1,24 @@
 Metadata-Version: 1.1
 Name: Solgema.EnvironmentViewlets
-Version: 0.5
+Version: 0.6
 Summary: Solgema EnvironmentViewlets
 Home-page: http://www.martronic.ch/plone_products/Solgema.EnvironmentViewlets
 Author: Martronic SA
 Author-email: martronic@martronic.ch
 License: GPL
 Description: Solgema.EnvironmentViewlets Package Readme
-        =========================
+        ==========================================
         
         Overview
         --------
         
-        Solgema
+        This package defines new viewlets for portal logo, banner, footer, print logo and print footer.
+        You can use any plone content to be displayed in those viewlets.
+        Viewlet contents are searched through the path so they are contextual. For example you can define your banners or logo for a single folder only.
         
-        Changelog for Solgema.EnvironmentViewlets
+        To add a content in an environment viewlet, just go on the content, click on the Evironment tab and choose where you want to use the content.
         
+        The banner has its own carousel display.
         
         Solgema.EnvironmentViewlets - 0.5
         
@@ -26,10 +29,12 @@ Description: Solgema.EnvironmentViewlets Package Readme
         Changelog for Solgema.EnvironmentViewlets
         -----------------------------------------
         
-        v 0.5
+        v 0.6
         -----
         
+        - modifies folder_renderer with our own template so that we don't depend on folder_full_view_item which displays title and above / below content body stuff.
         - initial release on github
+        - remove revirew_state filter for searching content as user might have its own workflow definition.
         
 Keywords: Solgema
 Platform: UNKNOWN

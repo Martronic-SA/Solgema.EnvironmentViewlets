@@ -77,7 +77,7 @@ Solgema/EnvironmentViewlets/resources/environment_printlogo_no_icon.png
 Solgema/EnvironmentViewlets/resources/getBodyStyle.py
 Solgema/EnvironmentViewlets/resources/solgema_environmentviewlets.css
 Solgema/EnvironmentViewlets/resources/solgema_environmentviewlets_print.css
-Solgema/EnvironmentViewlets/skins/solgemaenvironmentviewlets/carousel.js.dtml
+Solgema/EnvironmentViewlets/skins/solgemaenvironmentviewlets/carousel.js
 Solgema/EnvironmentViewlets/skins/solgemaenvironmentviewlets/environment_background_icon.png
 Solgema/EnvironmentViewlets/skins/solgemaenvironmentviewlets/environment_background_no_icon.png
 Solgema/EnvironmentViewlets/skins/solgemaenvironmentviewlets/environment_bandeau_icon.png
@@ -109,12 +109,9 @@ Solgema/EnvironmentViewlets/viewlets/bandeau.pt
 Solgema/EnvironmentViewlets/viewlets/bandeauManager.pt
 Solgema/EnvironmentViewlets/viewlets/collage_renderer.pt
 Solgema/EnvironmentViewlets/viewlets/common.py
-Solgema/EnvironmentViewlets/viewlets/common.py~
 Solgema/EnvironmentViewlets/viewlets/configure.zcml
-Solgema/EnvironmentViewlets/viewlets/configure.zcml~
 Solgema/EnvironmentViewlets/viewlets/flashmovie_macro_flashobject.pt
 Solgema/EnvironmentViewlets/viewlets/folder_renderer.pt
-Solgema/EnvironmentViewlets/viewlets/folder_renderer.pt~
 Solgema/EnvironmentViewlets/viewlets/footer.pt
 Solgema/EnvironmentViewlets/viewlets/footerManager.pt
 Solgema/EnvironmentViewlets/viewlets/logo.pt
