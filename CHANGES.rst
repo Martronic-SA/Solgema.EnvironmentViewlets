@@ -1,5 +1,9 @@
 Changelog for Solgema.EnvironmentViewlets
 -----------------------------------------
+v 0.7
+-----
+- index raw path in catalog (don't try to resolve the path)
+
 
 v 0.6
 -----

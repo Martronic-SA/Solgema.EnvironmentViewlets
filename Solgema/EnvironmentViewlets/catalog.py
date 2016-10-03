@@ -67,19 +67,23 @@ def get_bannerImageLink(object):
     if IBandeauMarker.providedBy(object):
         adapted = IBandeauContent(object, None)
         if adapted is not None and getattr(adapted, 'bannerImageLink', None):
-            return portal.restrictedTraverse(folder_path+adapted.bannerImageLink).UID()
+            return adapted.bannerImageLink
+#            return portal.restrictedTraverse(folder_path+adapted.bannerImageLink).UID()
     elif IFooterMarker.providedBy(object):
         adapted = IFooterContent(object, None)
         if adapted is not None and getattr(adapted, 'bannerImageLink', None):
-            return portal.restrictedTraverse(folder_path+adapted.bannerImageLink).UID()
+            return adapted.bannerImageLink
+#            return portal.restrictedTraverse(folder_path+adapted.bannerImageLink).UID()
     elif ILogoMarker.providedBy(object):
         adapted = ILogoContent(object, None)
         if adapted is not None and getattr(adapted, 'bannerImageLink', None):
-            return portal.restrictedTraverse(folder_path+adapted.bannerImageLink).UID()
+            return adapted.bannerImageLink
+#            return portal.restrictedTraverse(folder_path+adapted.bannerImageLink).UID()
     elif IBackgroundMarker.providedBy(object):
         adapted = IBackgroundContent(object, None)
         if adapted is not None and getattr(adapted, 'bannerImageLink', None):
-            return portal.restrictedTraverse(folder_path+adapted.bannerImageLink).UID()
+            return adapted.bannerImageLink
+#            return portal.restrictedTraverse(folder_path+adapted.bannerImageLink).UID()
     return None
 
 @indexer(IEnvironmentMarker)
